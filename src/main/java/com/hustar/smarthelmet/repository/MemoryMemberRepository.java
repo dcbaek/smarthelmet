@@ -1,6 +1,7 @@
 package com.hustar.smarthelmet.repository;
 
 import com.hustar.smarthelmet.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 

@@ -3,6 +3,7 @@ package com.hustar.smarthelmet.service;
 import com.hustar.smarthelmet.domain.Member;
 import com.hustar.smarthelmet.repository.MemberRepository;
 import com.hustar.smarthelmet.repository.MemoryMemberRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
@@ -10,10 +11,9 @@ import java.util.Optional;
 public class MemberService {
     private final MemberRepository memberRepository;
 
-    public MemberService(MemoryMemberRepository memberRepository) {
+    public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
-
     /**
      * 회원가입
      */
