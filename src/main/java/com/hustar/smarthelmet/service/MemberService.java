@@ -61,11 +61,11 @@ public class MemberService {
         return memberRepository.findById(memberId);
     }
 
-    public void deletePost(Long id) {
-        Optional<Member> member = memberRepository.findById(id);
-        if (member.isPresent()) {
-            memberRepository.deleteById(member.get().getId());
-        }
-
-    }
+//    public void deletePost(Long id) {
+//        Optional<Member> member = memberRepository.findById(id);
+//        if (member.isPresent()) {
+//            memberRepository.deleteById(member.get().getId());
+//        }
+//
+//    }
 }

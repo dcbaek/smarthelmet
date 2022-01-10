@@ -45,10 +45,10 @@ public class MemberController {
         return "members/memberList";
     }
 
-    @DeleteMapping("/post/{no}")
-    public String delete(@PathVariable("no") Long id) {
-        memberService.deletePost(id);
-
-        return "redirect:/";
-    }
+//    @DeleteMapping("/post/{no}")
+//    public String delete(@PathVariable("no") Long id) {
+//        memberService.deletePost(id);
+//
+//        return "redirect:/";
+//    }
 }

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <div>
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>이름</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="manager : ${managers}">
+                <td th:text="${managers.mid}"></td>
+                <td th:text="${managers.name}"></td>
+                <td th:text="${managers.male}"></td>
+                <td th:text="${managers.belong}"></td>
+
+            </tr>
+            </tbody>
+        </table>
+        <!--        <form id="delete-form" th:action="@{'/members/' + ${member.id}}" method="post">-->
+        <!--            <input type="hidden" name="_method" value="delete"/>-->
+        <button id="delete-btn">삭제</button>
+        <!--        </form>-->
+    </div>
+</div> <!-- /container -->
+</body>
+</html>
