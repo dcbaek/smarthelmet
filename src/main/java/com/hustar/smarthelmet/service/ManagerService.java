@@ -2,10 +2,12 @@ package com.hustar.smarthelmet.service;
 
 import com.hustar.smarthelmet.domain.Manager;
 import com.hustar.smarthelmet.repository.ManagerRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class ManagerService {
 
     private final ManagerRepository managerRepository;
